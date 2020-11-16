@@ -9,7 +9,7 @@ function start() {
 }
 
 function loadDataFromServer() {
-    $.get('https://news-api-node.herokuapp.com/api/v1/news/', function(data) {
+    $.get('https://news-api-node.herokuapp.com/api/v1/news/trabalhotecnicas4', function(data) {
         addDataInTable(data);
     });
 }
@@ -40,7 +40,7 @@ function save() {
         mensagem: document.getElementById('mensagem').value
     };
     
-    $.post("https://news-api-node.herokuapp.com/api/v1/news/", newCourse).done(function() {
+    $.post("https://news-api-node.herokuapp.com/api/v1/news/trabalhotecnicas4", newCourse).done(function() {
         loadDataFromServer();
     });
 }
